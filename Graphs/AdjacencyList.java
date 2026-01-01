@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class AdjacencyList {
     public boolean isDi;
-    public static List<List<Integer>> AdjList;
+    public List<List<Integer>> AdjList;
 
     AdjacencyList(boolean isDi, int vertices) {
         this.isDi = isDi;
@@ -21,7 +21,7 @@ public class AdjacencyList {
         }
     }
 
-    public static void printGraph(){
+    public void printGraph(){
         for(int i = 0; i < AdjList.size(); i++){
             System.out.print(i + " : ");
             if(AdjList.get(i).isEmpty()) {
