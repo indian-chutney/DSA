@@ -12,4 +12,12 @@
 (Think of fire spreading through the graph)
 Create a Queue q for processing vertices, and have a visited, hashset or boolean array to indicate whether element has been viisited or not.
 
+It takes O(m + n) time.
 
+### DFS (Depth First Search):
+It finds lexicographic first path in a graph from source vertex u to each vertex. 
+(In a tree it finds shortest path)
+
+The idea is to go as deep into the graph as possible and backtrack once you are at a vertex without any unvisited adjacent vertices.
+
+It can be implemented in 2 ways, one is using a stack and the other is using backtracking. Backtracking saves up space.
